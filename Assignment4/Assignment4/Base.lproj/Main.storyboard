@@ -24,12 +24,18 @@
                                 <state key="normal" title="TRY">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="TryButtonClick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Ybl-5g-mgO"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5xZ-1n-Tpl">
                                 <rect key="frame" x="195" y="426" width="42" height="30"/>
                                 <state key="normal" title="AUTO">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="AutoButtonClick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="6lC-Oh-fD5"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SECRET SAFE" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mGb-Y0-6z6">
                                 <rect key="frame" x="81" y="66" width="114" height="21"/>
