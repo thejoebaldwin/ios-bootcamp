@@ -33,15 +33,15 @@ class ViewController: UIViewController {
     }
  
     @IBAction func TryButtonClick(sender: AnyObject) {
-        var label1 = pickerView.viewForRow(  pickerView.selectedRowInComponent(0), forComponent: 0) as? UILabel;
-        var label2 = pickerView.viewForRow(  pickerView.selectedRowInComponent(0), forComponent: 1) as? UILabel;
-        var label3 = pickerView.viewForRow(  pickerView.selectedRowInComponent(0), forComponent: 2) as? UILabel;
+        var label1 = pickerView.viewForRow(  pickerView.selectedRowInComponent(0), forComponent: 0) as UILabel;
+        var label2 = pickerView.viewForRow(  pickerView.selectedRowInComponent(1), forComponent: 1) as UILabel;
+        var label3 = pickerView.viewForRow(  pickerView.selectedRowInComponent(2), forComponent: 2) as UILabel;
         
-        if label1?.text == "6" && label2?.text == "5" && label3?.text == "4" {
+        if label1.text == "6" && label2.text == "5" && label3.text == "4" {
             println("match");
         }
         else {
-            println("no match");
+            println("no match \(label1.text),\(label2.text),\(label3.text)");
         }
     }
 }
